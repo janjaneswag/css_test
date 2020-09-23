@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-origin</title>
+    <style>
+        body {
+            background-color: #cccccc;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+            background: url("CSS/images/nook_small.jpg") no-repeat;
+            border: 10px dashed rgba(255, 255, 255, 0.7);
+            padding: 20px;
+        }
+
+        .box-border {
+            background-origin: border-box;
+        }
+
+        .padding-border {
+            background-origin: padding-box;
+        }
+
+        .content-border {
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box-border"></div>
+    <div class="box padding-border"></div>
+    <div class="box content-border"></div>
+</body>
+
+</html>
